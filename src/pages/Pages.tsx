@@ -15,7 +15,7 @@ const PageHero = ({ title, subtitle, image }: { title: string, subtitle: string,
       />
       <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-black/20"></div>
     </div>
-    <div className="relative z-10 max-w-[1800px] mx-auto px-6 pb-24 w-full">
+    <div className="relative z-10 max-w-[1800px] mx-auto px-4 md:px-12 lg:px-24 pb-24 w-full">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ export const AboutPage = () => (
       image="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=2070"
     />
     
-    <section className="py-24 px-6 max-w-[1800px] mx-auto">
+    <section className="py-24 px-4 md:px-12 lg:px-24 max-w-[1800px] mx-auto">
       <div className="grid lg:grid-cols-2 gap-24 mb-32">
         <div className="space-y-12">
           <SectionTitle number="01" title="رؤيتنا الإبداعية" />
@@ -169,7 +169,7 @@ export const ExpertisePage = () => (
       subtitle="مجموعة واسعة من التخصصات التي تندمج معاً لخلق تجارب استثنائية."
       image="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?auto=format&fit=crop&q=80&w=2070"
     />
-    <section className="py-24 px-6 max-w-[1800px] mx-auto">
+    <section className="py-24 px-4 md:px-12 lg:px-24 max-w-[1800px] mx-auto">
       <SectionTitle number="01" title="مجالات التخصص" />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-32">
         {[
@@ -286,7 +286,7 @@ export const BlueprintPage = () => (
       subtitle="منهجيتنا الهندسية في تحويل الخيال إلى واقع ملموس بدقة متناهية."
       image="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=2070"
     />
-    <section className="py-24 px-6 max-w-[1800px] mx-auto">
+    <section className="py-24 px-4 md:px-12 lg:px-24 max-w-[1800px] mx-auto">
       {/* Section 01: Philosophy */}
       <div className="mb-48">
         <SectionTitle number="01" title="الفلسفة التصميمية" />
@@ -420,7 +420,7 @@ export const FutureLabPage = () => (
       subtitle="حيث نختبر حدود الممكن ونبتكر تقنيات الفعاليات للجيل القادم."
       image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072"
     />
-    <section className="py-24 px-6 max-w-[1800px] mx-auto">
+    <section className="py-24 px-4 md:px-12 lg:px-24 max-w-[1800px] mx-auto">
       <div className="grid lg:grid-cols-2 gap-24 mb-32">
         <div className="bg-emerald-500 text-black p-12 lg:p-24 rounded-sm">
           <SectionTitle number="01" title="الذكاء الاصطناعي" />
@@ -568,7 +568,7 @@ export const ContactPage = () => (
       subtitle="دعنا نبدأ حواراً حول كيفية تحويل رؤيتك القادمة إلى واقع مذهل."
       image="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=2074"
     />
-    <section className="py-24 px-6 max-w-[1800px] mx-auto">
+    <section className="py-24 px-4 md:px-12 lg:px-24 max-w-[1800px] mx-auto">
       <div className="grid lg:grid-cols-2 gap-24 mb-48">
         <div>
           <SectionTitle number="01" title="معلومات التواصل" />

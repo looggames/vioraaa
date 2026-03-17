@@ -47,7 +47,7 @@ const Nav = () => {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-black/90 backdrop-blur-xl py-4 border-b border-white/10' : 'bg-transparent py-8'}`}>
-      <div className="max-w-[1800px] mx-auto px-6 flex justify-between items-center">
+      <div className="max-w-[1800px] mx-auto px-4 md:px-12 lg:px-24 flex justify-between items-center">
         <div className="flex items-center gap-12">
           <Link to="/" className="text-2xl font-display font-medium text-white">
             فيورا<span className="text-emerald-500">.</span>

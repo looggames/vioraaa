@@ -59,7 +59,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-black/40"></div>
         </motion.div>
 
-        <div className="relative z-10 w-full max-w-[1800px] mx-auto px-4 lg:px-6 pb-12 lg:pb-24">
+        <div className="relative z-10 w-full max-w-[1800px] mx-auto px-4 md:px-12 lg:px-24 pb-12 lg:pb-24">
           <motion.div style={{ opacity }}>
             <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-8 lg:gap-12">
               <div className="max-w-4xl">
