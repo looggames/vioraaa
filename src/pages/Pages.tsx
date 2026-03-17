@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 
 const PageHero = ({ title, subtitle, image }: { title: string, subtitle: string, image: string }) => (
   <section className="relative h-screen flex flex-col justify-end overflow-hidden">
-    <div className="absolute inset-0 z-0">
+    <div className="fixed inset-0 z-0">
       <img 
         src={image} 
         alt={title} 

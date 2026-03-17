@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 import { 
   ArrowUpLeft, 
   Zap, 
@@ -36,20 +36,11 @@ const Marquee = ({ text }: { text: string }) => (
 );
 
 export default function Home() {
-  const heroRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
-    offset: ["start start", "end start"]
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-
   return (
     <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-emerald-500 selection:text-black" dir="rtl">
       {/* Hero Section - Editorial Style */}
-      <section ref={heroRef} className="relative min-h-screen lg:h-[110vh] flex flex-col justify-end overflow-hidden">
-        <motion.div style={{ y }} className="absolute inset-0 z-0">
+      <section className="relative min-h-screen lg:h-[110vh] flex flex-col justify-end overflow-hidden">
+        <div className="fixed inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=2070" 
             alt="Hero" 
@@ -57,10 +48,10 @@ export default function Home() {
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-black/40"></div>
-        </motion.div>
+        </div>
 
         <div className="relative z-10 w-full max-w-[1800px] mx-auto px-4 md:px-12 lg:px-24 pb-12 lg:pb-24">
-          <motion.div style={{ opacity }}>
+          <div>
             <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-8 lg:gap-12">
               <div className="max-w-4xl">
                 <span className="text-emerald-500 font-mono text-xs md:text-sm uppercase mb-4 md:mb-6 block">
@@ -84,7 +75,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -158,7 +149,7 @@ export default function Home() {
       </Section>
 
       {/* Expertise - Bento Grid Layout */}
-      <Section id="expertise">
+      <Section id="expertise" className="bg-[#050505]">
         <div className="max-w-[1800px] mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 lg:mb-24 gap-8">
             <h2 className="text-5xl md:text-6xl lg:text-8xl font-display font-medium uppercase">خبراتنا</h2>
@@ -282,7 +273,7 @@ export default function Home() {
       </Section>
 
       {/* Future Lab - Immersive Style */}
-      <Section id="future-lab" className="relative">
+      <Section id="future-lab" className="bg-[#050505]">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072" 
